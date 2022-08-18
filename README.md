@@ -1,5 +1,10 @@
 # WalletConnect Example Dapp
 
+## Firstly
+```bash
+npm install
+```
+
 ## Develop
 
 ```bash
