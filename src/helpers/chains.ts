@@ -2,16 +2,16 @@ import { IChainData } from "../helpers/types";
 
 export const SUPPORTED_CHAINS: IChainData[] = [
   {
-    name: "Imversed",
+    name: "Imversed Testnet",
     short_name: "imv",
-    chain: "AIMV",
+    chain: "ETH",
     network: "imversed",
     chain_id: 5555558,
-    network_id: 5555558,
-    rpc_url: "https://jsonrpc-endpoint-test.imversed.com:443/",
+    network_id: 1,
+    rpc_url: "https://jsonrpc-endpoint-test.imversed.com:443",
     native_currency: {
       symbol: "AIMV",
-      name: "Imv",
+      name: "Atto Imversed",
       decimals: "18",
       contractAddress: "",
       balance: "",

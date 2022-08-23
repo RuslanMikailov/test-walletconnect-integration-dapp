@@ -1,6 +1,6 @@
 {
   "name": "walletconnect-example-dapp",
-  "version": "1.7.1",
+  "version": "1.7.8",
   "private": true,
   "keywords": [
     "walletconnect",
@@ -13,7 +13,7 @@
   "license": "MIT",
   "scripts": {
     "start": "export NODE_OPTIONS=--openssl-legacy-provider; react-scripts-ts start",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider; react-scripts-ts build",
+    "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
     "lint": "eslint -c './.eslintrc' --fix './src/**/*{.ts,.tsx}'"
@@ -27,9 +27,9 @@
   },
   "dependencies": {
     "@types/eth-sig-util": "^2.1.1",
-    "@walletconnect/client": "^1.7.1",
-    "@walletconnect/qrcode-modal": "^1.7.1",
-    "@walletconnect/web3-provider": "^1.8.0",
+    "@walletconnect/client": "^1.7.8",
+    "@walletconnect/qrcode-modal": "^1.7.8",
+    "@walletconnect/web3-provider": "^1.7.8",
     "axios": "^0.25.0",
     "bignumber.js": "^9.0.1",
     "blockies-ts": "^1.0.0",

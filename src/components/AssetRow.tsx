@@ -4,6 +4,7 @@ import Icon from "./Icon";
 import ERC20Icon from "./ERC20Icon";
 import eth from "../assets/eth.svg";
 import xdai from "../assets/xdai.png";
+import imv from "../assets/ic_imversed.svg";
 import { handleSignificantDecimals, convertAmountFromRawNumber } from "../helpers/bignumber";
 
 const SAssetRow = styled.div`
@@ -29,7 +30,9 @@ const SAssetBalance = styled.div`
 const AssetRow = (props: any) => {
   const { asset } = props;
   const nativeCurrencyIcon =
-    asset.symbol && asset.symbol.toLowerCase() === "eth"
+    asset.symbol && asset.symbol.toLowerCase() === "aimv"
+      ? imv
+      : asset.symbol && asset.symbol.toLowerCase() === "eth"
       ? eth
       : asset.symbol && asset.symbol.toLowerCase() === "xdai"
       ? xdai
